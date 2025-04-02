@@ -21,15 +21,11 @@ Visualização de Tarefas: Exibir as notas cadastradas de forma organizada.
 
 Atualizações: Alterar o status ou as informações de uma nota.
 
-Interface Responsiva: Garantir que o sistema seja funcional em diferentes dispositivos, como celulares, tablets e computadores.
-
 Calendário Integrado: Para definição dos prazos das notas.
 
 ### 3. Restrições
 
 Neste trabalho não serão considerados:
-
-Integração com outros sistemas de terceiros, como plataformas de e-commerce ou redes sociais.
 
 Funcionalidades avançadas de análise de produtividade, como gráficos detalhados de desempenho.
 
