@@ -1,0 +1,82 @@
+/* Centralizar o container */
+.login-container {
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    width: 100vw; /* 100% da largura da tela */
+    height: 100vh; /* 100% da altura da tela */
+    background-color: #363467; /* Cor de fundo */
+  }
+  
+  /* Caixa de login/registro */
+  .login-box {
+    background: linear-gradient(#363467 0%, rgba(30, 29, 79, 0.8) 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #363653;
+    width: 320px;
+    text-align: center;
+  }
+  
+  /* Inputs */
+  .input-group {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+  }
+  
+  .input-group input { /*borda*/
+    padding: 10px;
+    border: 1px solid #363653;
+    border-radius: 30px;
+    background-color: #48456c;
+    font-size: 16px;
+  }
+  
+  /* Botão login */
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #8B8AE1;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Alternância entre Login e Registro */
+  .toggle-form {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .toggle-form a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .toggle-form a:hover { /* */
+    text-decoration: underline;
+  }
+  
+  /* Mensagem de erro */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

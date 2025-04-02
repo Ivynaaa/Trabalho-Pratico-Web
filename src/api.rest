@@ -1,0 +1,84 @@
+###
+GET http://localhost:3000/tasks
+
+
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "User 3",
+    "email": "user3@email.com",
+    "password": "123"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "user2@email.com",
+  "password": "123"
+}
+
+###
+POST http://localhost:3000/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q3NjIxNzIyMjk4MDA1ODdlODM2YjMiLCJpYXQiOjE3NDIxNjg2MDksImV4cCI6MTc0MjE3MjIwOX0.feCaGaks5KvKrJ_7DlAeZASKLsAvi4gB9EYrwqXNlZI
+Content-Type: application/json
+
+{
+    "title": "Task 2 User-2",
+    "description": "Description 12",
+    "status": "done",
+    "deadline": "2025-12-31"
+}
+
+###
+PUT http://localhost:3000/tasks/67d7624c2229800587e836b6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q3NjIxNzIyMjk4MDA1ODdlODM2YjMiLCJpYXQiOjE3NDIxNjg2MDksImV4cCI6MTc0MjE3MjIwOX0.feCaGaks5KvKrJ_7DlAeZASKLsAvi4gB9EYrwqXNlZI
+Content-Type: application/json
+
+{
+    "title": "Test Put User-2",
+    "description": "Description 1",
+    "status": "done",
+    "deadline": "2021-12-31"
+}
+
+###
+DELETE http://localhost:3000/tasks/67d763152229800587e836c7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q3NWNjYjg4OTMzZTg2ZmVmOTAxNjEiLCJpYXQiOjE3NDIxNjc5OTEsImV4cCI6MTc0MjE3MTU5MX0.nTNQw0wkpiLQrv0aJRYKd5oQ-poWKsvIqIKJVkS4Ttc
+
+
+###
+GET  http://localhost:3000/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2Q3NjIxNzIyMjk4MDA1ODdlODM2YjMiLCJpYXQiOjE3NDIxNjg2MDksImV4cCI6MTc0MjE3MjIwOX0.feCaGaks5KvKrJ_7DlAeZASKLsAvi4gB9EYrwqXNlZI
+
+
+
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Task 4",
+    "description": "Description 4",
+    "status": "",
+    "deadline": "2021-12-31"
+}
+
+###
+PUT http://localhost:3000/tasks/67d753726d8557af4374e048
+Content-Type: application/json
+
+{
+    "title": "Task 4.1",
+    "description": "Description 4.1",
+    "status": "done",
+    "deadline": "2021-12-31"
+}
+
+###
+DELETE http://localhost:3000/tasks/67d753726d8557af4374e048
+

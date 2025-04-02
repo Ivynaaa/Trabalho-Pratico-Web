@@ -1,0 +1,217 @@
+/* Container geral para organizar o layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 97vw;
+  background: linear-gradient(135deg, #1a1a3c, #362f5a);
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+/* Estilo do header (contêiner para o título e botões) */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+/* Estilo do botão "Voltar" */
+.back-btn {
+  background: #8B8AE1;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* Estilo do botão "Nova Nota" */
+.add-task-btn {
+  position: absolute; /* Posicionamento absoluto para controle manual */
+  top: 10px; /* Distância do topo */
+  right: 90px; /* Distância da borda direita (ajustada manualmente) */
+  background: #8B8AE1;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+}
+
+.add-task-btn:hover { 
+  opacity: 0.8;
+}
+
+/* Estilo para o título "Notas" */
+h2 {
+  margin: 0;
+  font-size: 24px;
+  top: 10px; 
+  right: 770px;
+  position: absolute; 
+  flex-grow: 1;
+}
+
+/* Estilo para mensagens de erro */
+.error {
+  color: #ff4d4d;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Estilo do formulário */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Estilo para o textarea com auto-resize */
+.task-form textarea.auto-resize-textarea {
+  min-height: 100px;
+  resize: none;
+  overflow: hidden;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #8B8AE1;
+  background: #29274e;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Placeholder estilizado para consistência */
+.task-form input::placeholder,
+.task-form textarea::placeholder,
+.task-form input[type="date"]::-webkit-datetime-edit {
+  color: #c9c9ff;
+  opacity: 0.7;
+}
+
+/* Remove a aparência padrão do calendário no Chrome */
+.task-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Estiliza o foco nos campos */
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form input[type="date"]:focus {
+  outline: none;
+  border-color: #FFD700;
+  box-shadow: 0 0 5px rgba(139, 138, 225, 0.5);
+}
+
+.update-task-btn {
+  background: #8B8AE1;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update-task-btn:hover {
+  opacity: 0.8;
+}
+
+/* Estilo da lista de tarefas */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.task-card {
+  background: #3e3b65;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.task-deadline {
+  font-size: 14px;
+  color: #c9c9ff;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.complete-btn {
+  background: #8B8AE1;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.complete-btn.completed {
+  background: #4caf50;
+}
+
+.edit-btn, .delete-btn, .cancel-edit-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn:hover {
+  color: #FFD700;
+}
+
+.delete-btn:hover {
+  color: #ff4d4d;
+}
+
+.cancel-edit-btn:hover {
+  color: #FF4500;
+}
