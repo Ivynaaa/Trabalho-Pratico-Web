@@ -61,10 +61,11 @@ npm install
 
 Crie um arquivo .env na raiz do backend e adicione as seguintes configurações:
 
+```js
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/seu-banco  # Ou sua URI do MongoDB Atlas
 JWT_SECRET=sua_chave_secreta_segura
-
+```
 ### **Iniciar o Servidor**
 
 npx nodemon server.js
