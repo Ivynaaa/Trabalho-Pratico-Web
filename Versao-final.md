@@ -11,9 +11,9 @@
 
 ### 1. Funcionalidades implementadas
 
-Cadastro de Tarefas: Criar e editar tarefas.
+Cadastro das Notas: Criar e editar notas.
 
-Visualização de Tarefas: Exibir as tarefas cadastradas de forma organizada.
+Visualização de Notas: Exibir as notas cadastradas de forma organizada.
 
 Listagem: Permitir a classificação das notas como pendentes ou concluídas.
 
